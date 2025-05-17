@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facadeBibliotheque.MonController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onAction="#handleLivres" prefWidth="250.0" text="GESTION DES LIVRES" GridPane.halignment="CENTER" />
+      <Button maxWidth="250.0" mnemonicParsing="false" onAction="#handleAdherents" text="GESTION DES ADHERENTS" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Button maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onAction="#handleEmprunts" prefWidth="250.0" text="EMPRUNT ET RETOUR DES LIVRES" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Button maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onAction="#handleReservations" prefWidth="250.0" text="SYSTEME DE RESERVATION DES LIVRES" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onAction="#handleAmendes" prefWidth="250.0" text="CALCUL DES AMENDES" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onAction="#handleRegles" prefWidth="250.0" text="CATEGORIES DE LIVRES" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+      <Button maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onAction="#handleReporting" prefWidth="250.0" text="FONCTIONNALITES DE REPORTING" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Button maxWidth="250.0" minWidth="250.0" mnemonicParsing="false" onAction="#handlePersistence" prefWidth="250.0" text="PERSISTENCE DE L'ETAT DU SYSTEME" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+   </children>
+</GridPane>

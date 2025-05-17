@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="30.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="operations.GestionLivres">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.199951171875" minWidth="10.0" prefWidth="231.199951171875" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="368.800048828125" minWidth="10.0" prefWidth="368.800048828125" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Type:" GridPane.halignment="RIGHT" />
+      <TextField fx:id="typeField" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Titre:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+      <TextField fx:id="titreField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Auteur:" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+      <TextField fx:id="auteurField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="anneeField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="Annee de Publication:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+      <Label text="Prix:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+      <TextField fx:id="prixField" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#retour" text="RETOUR" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#validerAjoutLivre" text="INSERER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets right="30.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>
