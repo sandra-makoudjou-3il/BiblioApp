@@ -23,57 +23,68 @@ import operations.GestionReglesPrets;
 import operations.GestionReporting;
 
 public class MonController {
-	
-	public static Bibliotheque bibliotheque=Bibliotheque.getInstance();
 
-    @FXML
-    private void handleLivres(ActionEvent event) {
+	public static Bibliotheque bibliotheque = Bibliotheque.getInstance();
+
+	@FXML
+	private void handleLivres( ActionEvent event ) {
 
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fichiersFXML/AfficherLivresFXML.fxml"));
-			Parent root = loader.load();
-			Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-	        stage.setScene(new Scene(root));
-	        stage.show();
-		} catch (IOException e) {
+			FXMLLoader	loader	= new FXMLLoader( getClass().getResource( "/fichiersFXML/AfficherLivresFXML.fxml" ) );
+			Parent		root	= loader.load();
+			Stage		stage	= (Stage) ( (Node) event.getSource() ).getScene().getWindow();
+			stage.setScene( new Scene( root ) );
+			stage.show();
+		} catch ( IOException e ) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    }
+	}
 
-    @FXML
-    private void handleAdherents(ActionEvent event) {
-        GestionAdherents.main(new String[0]);
-    }
+	@FXML
+	private void handleAdherents( ActionEvent event ) {
 
-    @FXML
-    private void handleEmprunts(ActionEvent event) {
-        GestionEmprunts.main(new String[0]);
-    }
+		try {
+			FXMLLoader	loader	= new FXMLLoader( getClass().getResource( "/fichiersFXML/AdherentFXML.fxml" ) );
+			Parent		root	= loader.load();
 
-    @FXML
-    private void handleReservations(ActionEvent event) {
-        GestionReservation.main(new String[0]);
-    }
+			Stage stage = (Stage) ( (Node) event.getSource() ).getScene().getWindow();
+			stage.setScene( new Scene( root ) );
+			stage.show();
+		} catch ( IOException e ) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
-    @FXML
-    private void handleAmendes(ActionEvent event) {
-        GestionAmendes.main(new String[0]);
-    }
+	@FXML
+	private void handleEmprunts( ActionEvent event ) {
+		GestionEmprunts.main( new String[0] );
+	}
 
-    @FXML
-    private void handleRegles(ActionEvent event) {
-        GestionReglesPrets.main(new String[0]);
-    }
+	@FXML
+	private void handleReservations( ActionEvent event ) {
+		GestionReservation.main( new String[0] );
+	}
 
-    @FXML
-    private void handleReporting(ActionEvent event) {
-        GestionReporting.main(new String[0]);
-    }
+	@FXML
+	private void handleAmendes( ActionEvent event ) {
+		GestionAmendes.main( new String[0] );
+	}
 
-    @FXML
-    private void handlePersistence(ActionEvent event) {
-        
-        System.out.println("Persistence non encore implémentée.");
-    }
+	@FXML
+	private void handleRegles( ActionEvent event ) {
+		GestionReglesPrets.main( new String[0] );
+	}
+
+	@FXML
+	private void handleReporting( ActionEvent event ) {
+		GestionReporting.main( new String[0] );
+	}
+
+	@FXML
+	private void handlePersistence( ActionEvent event ) {
+
+		System.out.println( "Persistence non encore implémentée." );
+	}
 }

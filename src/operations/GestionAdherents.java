@@ -3,10 +3,24 @@ package operations;
 import java.util.Scanner;
 
 import bibliotheque.Bibliotheque;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import livre.Livre;
 import utilisateur.Adherent;
 import utilisateur.Utilisateur;
 
 public class GestionAdherents {
+	@FXML
+    private TextField nomField;
+	
+	 @FXML
+	 private ListView<Adherent> listViewAdherents;
+	 
+	    ObservableList<Adherent> AdherentsObservable = FXCollections.observableArrayList();
+
 
 	static Bibliotheque bibliotheque=Bibliotheque.getInstance();
 	
